@@ -112,7 +112,7 @@ img{
     outline: 2px solid var(--blue-color);
     outline-offset: -2px;
     transition: all ease-in-out 150ms;
-
+    color: var(--blue-color);
 }
 .body_buttons>div:nth-child(1):hover{
     background-color:#fff;
@@ -131,13 +131,64 @@ img{
 .footer{
     color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4rem;
-    font-size: 1.1rem;
+    
+    /* font-size: 1.1rem;
     font-weight: 600;
     font-style: italic;
-    text-align: center;
+    text-align: center; */
     background-color:var(--blue-color);
     
+    
+}
+.footer>.left_side{
+    display: flex;
+    gap: 3rem;
+    width: 75rem;
+    padding: 0.3rem;
+}
+
+.steps{
+    width:34%;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.steps:hover{
+    color: black;
+    outline:3px #fff double;
+    outline-offset: 10px;
+   
+}
+.steps>div{
+    font-size:0.95rem;
+    font-weight: normal;
+    font-style: italic;
+}
+.footer>.right_side{
+    display: flex;
+    width: 25rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.footer>.right_side>div{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 30rem;
+    border: #fff solid 0.15rem;
+    
+}
+.footer>.right_side>div:hover{
+    border: black solid 0.15rem;
+    color: black;
+}
+.footer>.right_side>div:active{
+    border:#fff solid 0.15rem;
+    color: #fff;
 }
